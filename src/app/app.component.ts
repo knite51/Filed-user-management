@@ -1,4 +1,7 @@
+import { Location } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'user-management';
+  url = new BehaviorSubject('');
+
+  constructor(location: Location, router: Router) {
+    router.events.subscribe(val => {
+      this.url.next(location.path());
+    });
+  }
 }

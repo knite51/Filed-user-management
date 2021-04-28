@@ -1,0 +1,18 @@
+<div class="Container">
+  <h2>My Users:</h2>
+
+  <div *ngIf="userError?.message">
+    <div class="alert alert-danger" role="alert">
+      Some error occurred. Please try again
+    </div>
+  </div>
+
+  <ng-container *ngFor="let todo of UserList">
+    <div class="row">
+      <div class="col-md-2">Name:</div>
+      <div class="col-md-2 todoItem">{{ todo.firstName }}</div>
+      <!-- <div class="col-md-2">IsCompleted:</div>
+      <div class="col-md-2 todoItem">{{ todo.IsCompleted }}</div> -->
+    </div>
+  </ng-container>
+</div>

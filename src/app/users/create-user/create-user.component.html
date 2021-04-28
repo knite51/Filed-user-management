@@ -1,0 +1,36 @@
+<div class="container form-group" style="margin: 10px;">
+  <h3>Create New User</h3>
+  <form [formGroup]="userForm">
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputName"><span class="text-danger">*</span> FirstName</label>
+        <input formControlName="firstName" type="text" class="form-control" id="inputFName">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputName"><span class="text-danger">*</span> LastName</label>
+        <input formControlName="lastName" type="text" class="form-control" id="inputLName">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputName"><span class="text-danger">*</span> Email</label>
+        <input formControlName="email" type="text" class="form-control" id="inputEmail">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputName"><span class="text-danger">*</span> Advert</label>
+        <input formControlName="monthlyAdvertisingBudget" type="number" class="form-control" id="inputAdvert">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputdataFields"><span class="text-danger">*</span> Phone</label>
+        <input formControlName="monthlyAdvertisingBudget" type="number" class="form-control" id="inputPhone">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <button type="submit" [disabled]="userForm.invalid" class="btn btn-primary" (click)="handleCreateUser()">Create
+        User</button>
+    </div>
+
+  </form>
+</div>

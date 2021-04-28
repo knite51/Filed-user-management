@@ -3,6 +3,6 @@ export interface UserModel {
   lastName: string;
   email: string;
   monthlyAdvertisingBudget: number;
-  Phone: number;
+  phone: number;
 }
 

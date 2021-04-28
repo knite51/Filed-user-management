@@ -1,4 +1,4 @@
-<div class="Container">
+<div>
   <h2>My Users:</h2>
 
   <div *ngIf="userError?.message">
@@ -7,12 +7,28 @@
     </div>
   </div>
 
-  <ng-container *ngFor="let todo of UserList">
-    <div class="row">
-      <div class="col-md-2">Name:</div>
-      <div class="col-md-2 todoItem">{{ todo.firstName }}</div>
-      <!-- <div class="col-md-2">IsCompleted:</div>
-      <div class="col-md-2 todoItem">{{ todo.IsCompleted }}</div> -->
-    </div>
+  <ng-container>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">FirstName</th>
+          <th scope="col">LastName</th>
+          <th scope="col">Email</th>
+          <th scope="col">Ad Monthly Budget</th>
+          <th scope="col">Phone Number</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let user of UserList; let i = index;">
+        <tr>
+          <th scope="row">{{i + 1}}</th>
+          <td>{{user.firstName}}</td>
+          <td>{{user.lastName}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.monthlyAdvertisingBudget}}</td>
+          <td>{{user.phone}}</td>
+        </tr>
+      </tbody>
+    </table>
   </ng-container>
 </div>

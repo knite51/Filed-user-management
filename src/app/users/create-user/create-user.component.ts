@@ -12,12 +12,14 @@ import { UserModel } from 'src/app/store/storeModels/user.model';
 })
 export class CreateUserComponent implements OnInit {
 
+  viewFormTwo = false;
+
   userForm = new FormGroup({
     firstName: new FormControl('', Validators.required),
     lastName: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
-    monthlyAdvertisingBudget: new FormControl(0, Validators.required),
-    phone: new FormControl(0, Validators.required),
+    monthlyAdvertisingBudget: new FormControl('', Validators.required),
+    phone: new FormControl('', Validators.required),
   });
 
   constructor(private genServ: GeneralService, private paymentServ: PaymentService,

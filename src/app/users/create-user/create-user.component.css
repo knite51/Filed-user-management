@@ -1,0 +1,58 @@
+.card {
+  background: #fbfbfb;
+  border-radius: 15px;
+  margin-top: -50px;
+}
+
+.card-body {
+  padding: 3.5em;
+}
+
+
+.form-check {
+  padding-left: 2.25rem;
+}
+
+.btn-start {
+  background-color: #f26c4d;
+  color: #ffff;
+}
+
+.sectionOne {
+  height: 320px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionOne-title {
+  color: rgb(66 204 245);
+}
+
+.sectionTwo {
+  height: 280px;
+}
+
+.sectionThree {
+  height: 380px;
+  background-color: rgb(58 194 239);
+  color: white;
+
+}
+
+span.quote {
+  color: white;
+  font-size: 10em;
+  content: "\201D";
+}
+
+footer {
+  height: 70px;
+  background-color: #595957;
+  color: white;
+}
+
+a {
+  color: white;
+}

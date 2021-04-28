@@ -1,4 +1,4 @@
-<div class="container form-group" style="margin: 10px;">
+<!-- <div class="container form-group" style="margin: 10px;">
   <h3>Create New User</h3>
   <form [formGroup]="userForm">
     <div class="form-row">
@@ -33,4 +33,315 @@
     </div>
 
   </form>
+</div> -->
+
+<div>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../../../assets/img/filedlogo.jpeg" alt="" srcset="">
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="header-title">
+            <h2>Book a Demo today and <br> get two weeks for <span style="color: #42ccf5;">free</span>. Why?</h2>
+          </div>
+          <br>
+          <div class="header-subtitle">
+            <h5>Because Our AI-Powered Software <br> Will Exceed Your Marketing Goals.
+            </h5>
+          </div>
+
+          <div class="imgDes">
+            <img style="width: 100%;" src="../../../assets/img/laptopImg.png" alt="" srcset="">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-content-box text-center">
+                <!--   <div *ngIf="!viewFormTwo; else formtwoHeader">
+                  <h3><br> Let's Start</b></h3>
+                  <br>
+
+                </div>
+              <h5 >Fill out our form and we'll get in touch to <br> get your trial
+                  setup.</h5> -->
+                <!-- <ng-template #formtwoHeader> -->
+                <h3><b>We'll be in touch to get your trial set up.</b></h3>
+                <br>
+                <h6>Fill out Form</h6>
+                <!-- </ng-template> -->
+              </div>
+              <br>
+              <br>
+
+              <!-- <form *ngIf="!viewFormTwo; else formtwo">
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="inputAds"> Do you want to make ads that
+                      convert?</label>
+                    <div class="row">
+                      <div class="form-check col-md-6">
+                        <input class="form-check-input" type="radio" name="convertAds" id="radios1" value="yes" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check col-md-6">
+                        <input class="form-check-input" type="radio" name="convertAds" id="radios2" value="no">
+                        <label class="form-check-label" for="radios2">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="inputName"> What's your monthly ad budget?</label>
+                    <select id="inputMonthlyBudget" class="form-control">
+                      <option selected>Select</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="form-row">
+                  <button type="submit" class="btn-start btn btn-block" (click)="viewFormTwo=true;">GET STARTED</button>
+                </div>
+
+              </form> -->
+
+              <!-- <ng-template #formtwo> -->
+              <form [formGroup]="userForm">
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input formControlName="firstName" type="text" class="form-control" id="inputFName"
+                      placeholder="First Name*">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input formControlName="lastName" type="text" class="form-control" id="inputLName"
+                      placeholder="Last Name*">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input formControlName="email" type="text" class="form-control" id="inputEmail"
+                      placeholder="Work Email*">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input formControlName="monthlyAdvertisingBudget" type="text" class="form-control" id="inputAdvert"
+                      placeholder="Monthly Advertising Budget*">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input formControlName="monthlyAdvertisingBudget" type="number" class="form-control"
+                      id="inputPhone">
+                  </div>
+                </div>
+
+
+                <div class="form-row">
+                  <!-- [disabled]="userForm.invalid" -->
+                  <button type="submit" class="btn-start btn btn-block" (click)="handleCreateUser()">GET
+                    FREE TRIAL</button>
+                </div>
+
+              </form>
+              <!-- </ng-template> -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <br>
+  <br>
+  <section>
+    <div class="sectionOne">
+      <div class="sectionOne-content">
+        <h4 class="sectionOne-title">Our Offer: Intelligent Automation. Real-time Insights. Unparalleled Results</h4>
+      </div>
+    </div>
+
+    <div class="sectionTwo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+              <h4>The <span style="color:rgb(75 209 246);">Benefit</span> of using Filed</h4>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-md-1">
+                <img src="../../../assets/img/tick.png" alt="">
+              </div>
+              <div class="col-md-11">
+                <h6 style="margin:5px 0 0 5px;">Ability to scale using Dexter, our AI-powered marketing genius.</h6>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-1">
+                <img src="../../../assets/img/tick.png" alt="">
+              </div>
+              <div class="col-md-11">
+                <h6 style="margin:5px 0 0 5px;">Client Success Manager Who will optimize your facebook ad <br>
+                  campaigns and focus on driving the best posibile result to you.
+                </h6>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-1">
+                <img src="../../../assets/img/tick.png" alt="">
+              </div>
+              <div class="col-md-11">
+                <h6 style="margin:5px 0 0 5px;"> This is limited time offer only.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionThree">
+      <div class="container">
+        <div class="row">
+          <br>
+          <br>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3"><span class="quote">&#8221;</span></div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 55px;"> "It surpassed our expectations"</h4>
+              </div>
+            </div>
+            <div style="margin-top: -90px;">
+              <p>"Filed has completely surpassed our expectations. I will refer everyone I know. Filed is worth much
+                more
+                than I paid for"</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="../../../assets/img/clientOne.png" alt="..." class="rounded-circle">
+                </div>
+                <div class="col-md-8">
+                  <div style="margin-top: 15px;">
+                    <h6><b>Tania Y.</b></h6>
+                    <p> <i>Felxi Content @Hello</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3"><span class="quote">&#8221;</span></div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 55px;"> "The essential marketing tool"</h4>
+              </div>
+            </div>
+            <div style="margin-top: -90px;">
+              <p>"Filed is the most valuable business resources we have ever purchased. I am amazed at the quality at
+                Filed. We were treated like royalty"</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="../../../assets/img/clientThree.png" alt="..." class="rounded-circle">
+                </div>
+                <div class="col-md-8">
+                  <div style="margin-top: 15px;">
+                    <h6><b>Jack Francis.</b></h6>
+                    <p> <i>Manager @ Accidents</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-3"><span class="quote">&#8221;</span></div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 55px;"> "Your company is truly upstanding"</h4>
+              </div>
+            </div>
+            <div style="margin-top: -90px;">
+              <p>"The service was excellent. After using filed my business skyrocketed! It really saves me time and
+                effort"</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="../../../assets/img/clientTwo.png" alt="..." class="rounded-circle">
+                </div>
+                <div class="col-md-8">
+                  <div style="margin-top: 15px;">
+                    <h6><b>Dawna N.</b></h6>
+                    <p> <i>Editor @ Museum at Typography</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+          <div>
+            <h6>Copyright @ 2020.All Rights Reserved.</h6>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <nav class="nav nav-pills nav-justified" style="margin-top: -10px;">
+            <a class="nav-item nav-link " href="#">HOME</a>
+            <a class="nav-item nav-link" href="#">FEATURES</a>
+            <a class="nav-item nav-link" href="#">TERMS</a>
+            <a class="nav-item nav-link" href="#">PRIVACY</a>
+            <a class="nav-item nav-link" href="#">CONTACTUS</a>
+            <a class="nav-item nav-link" href="#">
+              <span style="margin-right: 10px;">
+                <i class="fa fa-facebook"></i>
+              </span>
+              <span style="margin-right: 10px;">
+                <i class="fa fa-instagram"></i>
+              </span>
+              <span style="margin-right: 10px;">
+                <i class="fa fa-twitter"></i>
+              </span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>

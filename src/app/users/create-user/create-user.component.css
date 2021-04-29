@@ -1,11 +1,6 @@
 .card {
   background: #fbfbfb;
   border-radius: 15px;
-  margin-top: -50px;
-}
-
-.card-body {
-  padding: 3.5em;
 }
 
 
@@ -19,23 +14,14 @@
 }
 
 .sectionOne {
-  height: 320px;
   background-color: #f8f8f8;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sectionOne-title {
-  color: rgb(66 204 245);
-}
-
-.sectionTwo {
-  height: 280px;
-}
 
 .sectionThree {
-  height: 380px;
   background-color: rgb(58 194 239);
   color: white;
 
@@ -56,3 +42,169 @@ footer {
 a {
   color: white;
 }
+
+::placeholder {
+  color: black;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 557px) {
+
+  .logo,
+  .imgDes {
+    display: none;
+  }
+
+  .header-title {
+    margin-top: 25px;
+  }
+
+  .header-subtitle {
+    font-weight: 700;
+  }
+
+  .header-title,
+  .header-subtitle,
+  .sectionTwo-ColA {
+    text-align: center;
+  }
+
+  .free-style {
+    color: #f26c4d;
+  }
+
+  .card {
+    margin-top: 25px;
+  }
+
+  .card-body {
+    padding: 1.5em;
+  }
+
+  .mobile-formheader {
+    display: block;
+    color: #42ccf5;
+  }
+
+  .non-mobile-formheader {
+    display: none;
+  }
+
+  .sectionOne {
+    height: 220px;
+  }
+
+  .sectionOne-content {
+    padding: 15px;
+  }
+
+  .sectionOne-title {
+    color: #108cc9;
+    font-weight: 600;
+  }
+
+  .sectionTwo {
+    height: 415px;
+  }
+
+
+  .sectionTwo-ColA h4 {
+    font-weight: 700;
+  }
+
+  .sectionTwo-ColA {
+    padding: 0 60px 0 60px;
+  }
+
+  .list-testimonal {
+    margin-left: 27px;
+    line-height: 22px;
+    margin-right: 10px;
+  }
+
+  .sectionThree {
+    height: 980px;
+  }
+
+  .testimonal-title {
+    margin-top: 62px;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .testimonal-subtitle {
+    margin-top: -110px;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 558px) {
+
+  .logo,
+  .imgDes {
+    display: block;
+  }
+
+  .free-style {
+    color: #42ccf5;
+  }
+
+  .card {
+    margin-top: -50px;
+  }
+
+  .card-body {
+    padding: 3.5em;
+  }
+
+  .mobile-formheader {
+    display: none;
+  }
+
+  .non-mobile-formheader {
+    display: block;
+  }
+
+  .sectionOne {
+    height: 320px;
+  }
+
+  .sectionOne-title {
+    color: rgb(66 204 245);
+  }
+
+  .sectionTwo {
+    height: 280px;
+  }
+
+  .sectionTwo-ColA {
+    margin-top: 60px;
+  }
+
+  .list-testimonal {
+    margin: 5px 0 0 5px;
+  }
+
+  .sectionThree {
+    height: 380px;
+  }
+
+  .testimonal-title {
+    margin-top: 55px;
+  }
+
+  .testimonal-subtitle {
+    margin-top: -90px;
+  }
+
+  footer {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 998px) {}
+
+@media only screen and (min-width: 1000px) {}

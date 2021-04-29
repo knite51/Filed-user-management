@@ -22,7 +22,7 @@ export class CreateUserComponent implements OnInit {
     lastName: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
     monthlyAdvertisingBudget: new FormControl('', Validators.required),
-    phone: new FormControl('', Validators.required),
+    phone: new FormControl('+40', Validators.required),
   });
 
   constructor(private genServ: GeneralService, private paymentServ: PaymentService,

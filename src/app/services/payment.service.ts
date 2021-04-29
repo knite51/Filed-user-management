@@ -37,7 +37,7 @@ export class PaymentService {
   createUser(payload) {
     return this.store.dispatch(UserActions.CreateUserAction(payload));
 
-    // Comment Code will make a post request to the a connected backend service, implement with a error handler
+    // Commented Code will make a post request to the a connected backend service, implemented with a error handler
 
     // try {
     //   return this.http.post(`${this.ApiURL}`, payload).pipe(catchError(this.handleError));

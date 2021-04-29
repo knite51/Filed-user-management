@@ -125,9 +125,23 @@
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-12">
-                      <input formControlName="phone" type="number" class="form-control" id="inputPhone">
-                      <div class="text-danger" *ngIf="errMsg && errMsg.phone">{{errMsg.phone}}</div>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1" style="border-right: none;">
+                            <select name="list" class="adon-select">
+                              <option value="">Romania(Roman) </option>
+                            </select>
+                          </span>
+                        </div>
+                        <input style="border-left: none;" formControlName="phone" type="text" class="form-control"
+                          id="inputPhone">
+                        <div class="text-danger" *ngIf="errMsg && errMsg.phone">{{errMsg.phone}}</div>
+                      </div>
                     </div>
+
+
+
                   </div>
 
 
